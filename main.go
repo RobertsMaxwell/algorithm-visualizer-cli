@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-	"github.com/robertsmaxwell/algorithm-visualizer-cli/internal/tools"
+	"github.com/robertsmaxwell/sorting-cli/internal/tools"
 )
 
 func main () {

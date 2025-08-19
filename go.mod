@@ -1,3 +1,3 @@
-module github.com/robertsmaxwell/algorithm-visualizer-cli
+module github.com/robertsmaxwell/sorting-cli
 
 go 1.24.6
