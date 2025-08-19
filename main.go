@@ -22,10 +22,10 @@ func main () {
 	} 
 
 	arr := tools.GenerateRandomArray(length, 10)
-	fmt.Println(arr)
+	tools.PrettyPrintArray(arr)
 }
 
 func printUsageAndExit() {
 	fmt.Println("Usage: go run . <algorithm> <array-size>")
-		os.Exit(1)
+	os.Exit(1)
 }
