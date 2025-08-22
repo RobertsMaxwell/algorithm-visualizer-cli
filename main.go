@@ -22,7 +22,7 @@ func main () {
 	} 
 
 	arr := tools.GenerateRandomArray(length, 10)
-	tools.PrettyPrintArray(arr)
+	tools.BubbleSort(arr)
 }
 
 func printUsageAndExit() {

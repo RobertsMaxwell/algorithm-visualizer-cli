@@ -4,6 +4,7 @@ import (
 	"math/rand"
 	"fmt"
 	"strings"
+	"github.com/inancgumus/screen"
 )
 
 func GenerateRandomArray (length int, height int) []int {
@@ -17,8 +18,8 @@ func GenerateRandomArray (length int, height int) []int {
 }
 
 func PrettyPrintArray (arr []int) {
-	green := "\033[32m"
-    reset := "\033[0m"
+	screen.Clear() // clears screen
+    screen.MoveTopLeft() // moves cursor to top-left
 
 	title := "Visualizing Bubble Sort"
 	whitespace := len(arr) * 3 + 3
@@ -41,7 +42,7 @@ func PrettyPrintArray (arr []int) {
 
 		for k := 0; k < len(arr); k++ {
 			if arr[k] >= i {
-				line += green + "██ " + reset
+				line += "██ "
 			} else {
 				line += "   "
 			}
